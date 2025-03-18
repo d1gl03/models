@@ -93,8 +93,8 @@
 
 body {
   margin: 0;
-  font-size: 1.2rem;
-  font-family: "Georgia", serif;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
