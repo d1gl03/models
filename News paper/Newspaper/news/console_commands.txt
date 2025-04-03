@@ -9,7 +9,7 @@ user1 = User.objects.get(username='author1')
 user2 = User.objects.get(username='author2')
 user3 = User.objects.create_user(username='Гоша', password='example3', email='user3@example.com') 
 user4 = User.objects.create_user(username='Егор', password='example4', email='use4@example.com')
-author1 = Author.objects.create(user=user3)
+дыомадыомадыомадыомадыомадыомадыомадыомадыомадыомадыомадыомадыомм.create(user=user3)
 author2 = Author.objects.create(user=user4)
 
 Category.objects.create(category_name='Технологии')
