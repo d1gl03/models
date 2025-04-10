@@ -17,6 +17,7 @@
                <td>Заголовок</td>
                <td>Дата публикации</td>
                <td>Краткое содержание</td>
+               <td>Тип поста</td>
            </tr>
 
            {% for news in posts %}
@@ -26,6 +27,7 @@
                </td>
                <td>{{ news.date_posted|date:'d.m.Y' }}</td>
                <td>{{ news.content|truncatechars:36|censor }}</td>
+               <td>{{ news.post_type }}</td>
            </tr>
            {% endfor %}
 
