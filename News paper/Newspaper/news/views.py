@@ -4,13 +4,19 @@ from  datetime import  datetime
 from .filters import PostFilter
 from django.urls import reverse_lazy
 from .forms import PostForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LoginView
 
 class PostListView(ListView):
     model = Post
     context_object_name = 'posts'
     ordering = ['-date_posted']
-    template_name = 'news.html'
+    template_name = 'search.html'
     paginate_by = 10
+
+    def __init__(self):
+        super().__init__()
+        self.filterset = None
 
     def get_context_data(self, **kwargs):
         # Получаем базовый контекст
@@ -19,11 +25,13 @@ class PostListView(ListView):
         context['time_now'] = datetime.utcnow()
         # Добавляем количество всех новостей
         context['news_count'] = self.get_queryset().count()
+        context['filterset'] = self.filterset
         return context
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        return PostFilter(self.request.GET, queryset=queryset).qs
+        self.filterset = PostFilter(self.request.GET, queryset=queryset)
+        return self.filterset.qs
 
 class PostDetailView(DetailView):
     model = Post
@@ -41,7 +49,7 @@ class NewsCreateView(CreateView):
         post.post_type = 'NW'
         return super().form_valid(form)
 
-class PostUpdateView(UpdateView):
+class PostUpdateView(LoginRequiredMixin, UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'post_edit.html'
@@ -65,5 +73,7 @@ class ArticleCreateView(CreateView):
         post.save()
         return super().form_valid(form)
 
+class LoginViev(LoginView):
+    template_name = 'login.html'
 
 

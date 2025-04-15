@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="Работа с Vievs и фильтрами">
+    <list default="true" id="06b6660b-44f7-4c8c-854f-7e206cf19105" name="Changes" comment="Работа с Vievs и фильтрами(а ещё с формами)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/Newspaper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/News paper/Newspaper/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/News paper/Newspaper/templates/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/project2/project2/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/project2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/project2/project2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/project2/simpleapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/templatetags/custom_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/project2/simpleapp/templatetags/custom_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/project2/simpleapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/simpleapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project2/project2/simpleapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2/project2/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/project2/project2/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/project/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +164,11 @@
       <workItem from="1744208716925" duration="3105000" />
       <workItem from="1744280059144" duration="4748000" />
       <workItem from="1744294725482" duration="5551000" />
-      <workItem from="1744303482380" duration="410000" />
+      <workItem from="1744303482380" duration="1036000" />
+      <workItem from="1744308065944" duration="304000" />
+      <workItem from="1744459342695" duration="5294000" />
+      <workItem from="1744652698342" duration="1768000" />
+      <workItem from="1744711350652" duration="1354000" />
     </task>
     <task id="LOCAL-00001" summary="а">
       <option name="closed" value="true" />
@@ -221,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743693923404</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Работа с Vievs и фильтрами(а ещё с формами)">
+      <option name="closed" value="true" />
+      <created>1744303934752</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744303934752</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +237,8 @@
     <MESSAGE value="My first django &quot;app&quot;" />
     <MESSAGE value="Работа над моделями" />
     <MESSAGE value="Работа с Vievs и фильтрами" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с Vievs и фильтрами" />
+    <MESSAGE value="Работа с Vievs и фильтрами(а ещё с формами)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с Vievs и фильтрами(а ещё с формами)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DjangoProjects$models.coverage" NAME="models Coverage Results" MODIFIED="1742819680496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/News paper/Newspaper/news" />

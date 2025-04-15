@@ -8,7 +8,7 @@ class PostFilter(FilterSet):
         lookup_expr='icontains'
     )
 
-    author__user = CharFilter(
+    author   = CharFilter(
         lookup_expr='icontains',
         label='Автор'
     )
